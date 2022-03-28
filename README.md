@@ -1,3 +1,3 @@
-# Homebrew Pieces CLI
+# Pieces CLI for Linux - Homebrew
 
 For homebrew files
