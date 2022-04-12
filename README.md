@@ -1,3 +1,3 @@
-# Pieces CLI for Linux - Homebrew
+# Pieces CLI - Homebrew
 
-For homebrew files
+Just for storing the ruby homebrew file.
