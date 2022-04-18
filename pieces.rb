@@ -13,7 +13,5 @@ class Pieces < Formula
 	else
 		bin.install "pieces-mac" => "pieces"
 	end
-
-	prefix.install "README.md"
   end
 end
