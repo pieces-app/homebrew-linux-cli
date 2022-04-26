@@ -1,8 +1,8 @@
 class Pieces < Formula
   desc "A command line application for Pieces"
   homepage "https://code.pieces.app/"
-  url "https://storage.googleapis.com/app-releases-59612ba/pieces-cli/release/pieces-0.0.10.tar.gz"
-  sha256 "1f731e9077c9f1e9dc8e331da64921623e1f5b058339ed6dfd9ef99d9e13c10e"
+  url "https://storage.googleapis.com/app-releases-59612ba/pieces-cli/release/pieces-0.0.690.tar.gz"
+  sha256 "e2e2b429f55386c3e16b4f987153d6e642482a4dddd86c5e9a04dbbc601691c0"
   license ""
 
   depends_on "xsel" => :recommended
