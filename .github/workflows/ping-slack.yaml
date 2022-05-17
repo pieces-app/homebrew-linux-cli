@@ -1,0 +1,17 @@
+on: push
+name: Notify testing_cli channel of new version
+jobs:
+  notify_slack:
+    name: Notify Slack
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Slack Notification
+        uses: rtCamp/action-slack-notify@v2
+        env:
+          SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK }}
+          SLACK_CHANNEL: testing_cli
+          SLACK_COLOR: ${{ job.status }}
+          SLACK_USERNAME: Release_Bot
+          SLACK_ICON: https://assets.website-files.com/6143afec68f55570f449ef97/61e6e623ea34f877745b92b2_Connor.svg
+          SLACK_FOOTER: made with love by Connor
