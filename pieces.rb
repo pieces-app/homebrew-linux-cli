@@ -1,14 +1,13 @@
 class Pieces < Formula
   desc "A command line application for Pieces"
   homepage "https://code.pieces.app/"
-  url "https://storage.googleapis.com/app-releases-59612ba/pieces-cli/release/pieces-0.1.4.tar.gz"
-  sha256 "4d777367b9655feb1903f5aa0d18b18658652c4e72eb7637aed3c865bbd78c7f"
+  url "https://storage.googleapis.com/app-releases-59612ba/pieces-cli/release/pieces-0.1.5.tar.gz"
+  sha256 "cc1f254ba927bd5acf1ca0a643f71f04c470334e230803eb47ea3226f7789571"
   license ""
-
-  depends_on "xsel" => :recommended
 
   def install
 	if OS.linux?
+	    depends_on "xsel" => :recommended
 		bin.install "pieces-linux" => "pieces"
 	else
 		bin.install "pieces-mac" => "pieces"
